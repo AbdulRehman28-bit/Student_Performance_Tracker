@@ -26,6 +26,7 @@ This project is a Python and Flask-based system to manage and track student grad
 - Python 3.x
 - Flask (`pip install Flask`)
 - Pandas (`pip install pandas`)
+- Openpyxl (`pip install openpyxl`)
 
 ## Installation:
 
