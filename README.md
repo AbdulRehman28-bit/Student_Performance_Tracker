@@ -41,7 +41,6 @@ Here are some example screenshots of the application in action:
 ![Add Student Page](Student_Performance_Tracker/images/add_student_page.jpeg)
 
 ### Performance Summary
-![Performance Summary](images/performance_summary.png)
+![Performance Summary](Student_Performance_Tracker/images/performance_summary.jpeg)
 
-### Class Average and Individual Student Performance
-![Class Average](images/class_average.png)
+
