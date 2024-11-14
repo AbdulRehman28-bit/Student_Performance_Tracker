@@ -38,7 +38,7 @@ This project is a Python and Flask-based system to manage and track student grad
 Here are some example screenshots of the application in action:
 
 ### Add Student Page
-![Add Student Page](images/add_student_page.png)
+![Add Student Page](Student_Performance_Tracker/images/add_student_page.jpeg)
 
 ### Performance Summary
 ![Performance Summary](images/performance_summary.png)
