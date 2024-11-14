@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students Grid</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>All Students</h1>
+        <div class="students-grid">
+            <div class="grid-header">
+                <div class="grid-item">Name</div>
+                <div class="grid-item">Math</div>
+                <div class="grid-item">Science</div>
+                <div class="grid-item">English</div>
+                <div class="grid-item">Average</div>
+                <div class="grid-item">Status</div>
+            </div>
+            <div class="grid-body">
+                {% for student in students.values() %}
+                    <div class="grid-row">
+                        <div class="grid-item">{{ student.name }}</div>
+                        <div class="grid-item">{{ student.scores[0] }}</div>
+                        <div class="grid-item">{{ student.scores[1] }}</div>
+                        <div class="grid-item">{{ student.scores[2] }}</div>
+                        <div class="grid-item">{{ "{:.2f}".format(student.calculate_average()) }}</div>
+                        <div class="grid-item">{{ "Passing" if student.is_passing() else "Needs Improvement" }}</div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+        <br>
+        <br>
+        <a href="{{ url_for('index') }}" class="button">Back</a>
+    </div>
+</body>
+</html>
